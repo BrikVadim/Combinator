@@ -7,3 +7,15 @@ const factorial = n => {
     throw new RangeError('Параметр должен быть положительным числом не больше 170');
   }
 }
+
+const P = factorial
+
+const A = (n, m) => {
+  [n, m] = n > m ? [n, m] : [m, n]
+  return factorial(n) / factorial(n - m)
+}
+
+const C = (n, m) => {
+  [n, m] = n > m ? [n, m] : [m, n]
+  return factorial(n) / (factorial(m) * factorial(n - m))
+}
