@@ -15,12 +15,12 @@ const factorial = n => {
 
 const P = factorial
 
-const A = (n, m) => {
+function A(n, m) {
   arrange(arguments)
   return factorial(n) / factorial(n - m)
 }
 
-const C = (n, m) => {
+function C(n, m) {
   arrange(arguments)
   return factorial(n) / (factorial(m) * factorial(n - m))
 }
